@@ -106,7 +106,7 @@ On the bottom floor is an exhibit room showing the history and science of animat
                 let decoder = JSONDecoder()
                 
                 do {
-                    let cities = try decoder.decode([City.self], from: data)
+                    let cities = try decoder.decode([City].self, from: data)
                     return cities
                 }
                 catch {
